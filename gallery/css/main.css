@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+}
+
+.item{
+    max-width: 510px;
+    max-height: 260px;
+    margin: 10px;
+    width: calc(95vw / 2 - 10px);
+    height: calc(95vw / 2 / 8*9);
+    background-color: turquoise;
+    background-position: center;
+    background-size: cover;
+}
+
+@media all and (max-width: 1024px){
+    .item{
+        max-width: initial;
+        max-height: initial;
+        width: 95vw;
+        height: calc(95vw / 16 * 9);
+    }
+
+    .content{
+        width: 90%;
+    }
+}
